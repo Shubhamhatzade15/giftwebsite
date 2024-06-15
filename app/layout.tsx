@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 
 
 export const metadata: Metadata = {
-  title: "Sample app",
-  description: "My First app",
+  title: "Nextjs App",
+  description: "Shubham Hatzade",
 };
 
 export default function RootLayout({
