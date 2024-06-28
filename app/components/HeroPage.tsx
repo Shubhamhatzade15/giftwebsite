@@ -4,43 +4,16 @@ import Image from 'next/image';
 
 const HeroPage = () => {
   return (
-
-    
-<div >
-<div className="bg-container">
-      <div className="body-content">
-        {/* Left part content */}
-        
-        <div  className="heading-text">
-
-     <h1> Increase Your Customers Loyality and Satisfaction </h1>
-      
-    </div>
-
-    <div className='mt-4 text-lg'>
-      <p>We help business like yours earn more customers,standard from competitors, make money
-      </p>
-      </div>
-    <div>
-      <button>
-    <Link href="/" className="HeadtextButton mt-6 ">
-            Get Started
-          </Link>
-          </button>
-        </div>
-      </div>
-
-     
-
-      <div className="body-image">
-       <div className="w-500">
-        <Image src="/Group 38.svg" alt="" width={500} height={50}/>
-      </div>
+    <div className="banner-card">
+      <Image src="/image 141.png" alt="" width={1500} height={800} />
+      <div className="banner-text">
+        <h3>Gifts Wrapped with Care,</h3>
+        <h3>Delivered with Love!</h3>
+        <p>We take pride in offering exquisite gift wrapping solutions that reflects the care and thoughtfulness you put into selecting them.</p>
+        <br></br>
+        <Link href="/buy-now" className="btn btn-primary">Buy Now</Link>
       </div>
     </div>
-    </div>
-    
-   
   );
 };
 

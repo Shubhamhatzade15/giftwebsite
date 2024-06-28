@@ -11,29 +11,24 @@ const HeadFooter = () => {
       <ul className="headfooternav ">
       
         <li>
-        <div className="flex items-center space-x-4 ">
-        <Image src="/logos_google.svg" alt="" width={100} height={60}/>
+        <div className="flex items-center space-x-2 h-57 ">
+        <Image src="/Group 48096363.png" alt="" width={390} height={57}/>
       </div>
-          
         </li>
         <li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/Trello-logo-blue 1.png" alt="" width={100} height={60}/>
+        <div className="flex items-center space-x-2 ">
+        <Image src="/Group 48096364.png" alt="" width={390} height={57}/>
       </div>
         </li><li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/logos_monday.svg" alt="" width={100} height={60}/>
+        <div className="flex items-center space-x-2 ">
+        <Image src="/Group 48096365.png" alt="" width={390} height={57}/>
       </div>
         </li><li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/Notion.svg" alt="" width={100} height={60}/>
+        <div className="flex items-center space-x-2 ">
+        <Image src="/Group 48096366.png" alt="" width={390} height={57}/>
       </div>
-    
-        </li><li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/Slack.svg" alt="" width={100} height={60}/>
-        </div>
         </li>
+        
       </ul>
     </div>
     </div>
