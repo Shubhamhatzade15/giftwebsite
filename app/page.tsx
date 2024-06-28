@@ -7,6 +7,8 @@ import HeadFooter from './components/HeadFooter';
 
 import Do from './components/Do';
 import HowItWorks from './components/HowItWorks';
+import GiftWrap from './components/GiftWrap';
+import ImageGrid from './components/ImageGrid';
 
 
 
@@ -23,6 +25,8 @@ export default function Home() {
         
        <Do/>
        <HowItWorks/>
+       <GiftWrap/>
+       <ImageGrid/>
        
        
        
