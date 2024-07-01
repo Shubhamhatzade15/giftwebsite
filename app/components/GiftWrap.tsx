@@ -36,7 +36,7 @@ const GiftWrap = () => {
           <p>₹ 330/-</p>
         </div>
       </div>
-      <button className="shop-more">Shop more</button>
+      <button className="shop-more">Shop more ---></button>
     </div>
   );
 };

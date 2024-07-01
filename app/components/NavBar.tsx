@@ -1,33 +1,27 @@
-import React from 'react';
+// components/Navbar.tsx
+import Link from 'next/link';
+import '@fortawesome/fontawesome-free/css/all.css';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
-    <header className="header">
+    <nav className="navbar">
       <div className="logo">
-        <img src="/logo.png" alt="Logo" />
+        <Link href="/">
+          <img src="/image 172.png" alt="Logo" />
+        </Link>
       </div>
-      <nav className="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div className="search">
-        <input type="text" placeholder="Search" />
+      <div className="search-bar">
+        <input type="search" placeholder="Search...." />
+        <button type="submit"><i className="fas fa-search" /></button>
       </div>
-      <div className="actions">
-        <a href="#">
-          <i className="fa fa-heart"></i>
-        </a>
-        <a href="#">
-          <i className="fa fa-shopping-cart"></i>
-        </a>
-        <a href="#">
-          <i className="fa fa-user"></i>
-        </a>
+      <div className="right-side">
+        <div className="icons">
+          <i className="fas fa-heart" />
+          <i className="fas fa-shopping-cart" />
+          <i className="fas fa-user" />
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
