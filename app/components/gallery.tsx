@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Gallery = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Implement your form submission logic here
     console.log("Email submitted:", email);
