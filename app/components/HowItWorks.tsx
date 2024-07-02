@@ -3,9 +3,7 @@ import React from 'react';
 function HowItWorks() {
   return (
     <div className='How-cont'>
-      <div className="left-border-image">
-        <img src="/Group 48096367.png" alt="Left Border Image" />
-      </div>
+      
       <h2>How It Works</h2>
   
     <div className="gift-wrap-selection">

@@ -7,7 +7,7 @@ const HeadFooter = () => {
   return (
   
     <div className="headfooter-container">
-    <div className="">
+    
       <ul className="headfooternav ">
       
         <li>
@@ -31,7 +31,7 @@ const HeadFooter = () => {
         
       </ul>
     </div>
-    </div>
+    
     
   );
 };
