@@ -1,18 +1,17 @@
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const HeroPage = () => {
   return (
-    <div className="banner-card">
-      <Image src="/image 141.png" alt="" width={1500} height={800} />
-      <div className="banner-text">
-        <h3>Gifts Wrapped with Care,</h3>
-        <h3>Delivered with Love!</h3>
-        <p>We take pride in offering exquisite gift wrapping solutions </p>
-          <p>that reflects the care and thoughtfulness you put into selecting them.</p>
+    <div className="container-e">
+      <div className="background-image-e">
+        <img src="/image 141.png" alt="Gift box" />
+      </div>
+      <div className="content-e">
+        <h1>Gifts Wrapped with Care,</h1><h1>Delivered with Love!</h1>
+        <p>We take pride in offering exquisite gift wrapping solutions</p>
+        <p>that reflect the care and thoughtfulness you put into selecting them.</p>
         <br></br>
-        <Link href="/buy-now" className="btn-he btn-primary">Buy Now</Link>
+        <button className="button">BUY NOW</button>
       </div>
     </div>
   );
