@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="row copyright">
           <div className="col-md-12">
             <p>
-              Design and Developed by GBJ Buzz Copyright © 2024 cmp name
+              Design and Developed by GBJ Buzz Copyright © 2024 Shubham Hatzade
             </p>
           </div>
         </div>
