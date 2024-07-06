@@ -36,7 +36,7 @@ const Do: React.FC = () => {
           <div className="card">
             <div className="card-img-top-2-container ">
               <img src="/image 179.png" className="card-img-top-2 hover-effect-zoom-out" alt="Money Envelopes" />
-              <span class="discount-tag">40% off</span>
+              <span className="discount-tag">40% off</span>
               <div className="overlay">
                 <h5 className="card-title">Money Envelopes</h5>
                 <a href="#" className="btn btn-primary">Shop Now</a>
@@ -48,7 +48,7 @@ const Do: React.FC = () => {
           <div className="card">
             <div className="card-img-top-2-container">
               <img src="/image 180.png" className="card-img-top-2 hover-effect-zoom-out" alt="Wax Seals" />
-              <span class="discount-tag">40% off</span>
+              <span className="discount-tag">40% off</span>
               <div className="overlay">
                 <h5 className="card-title">Wax Seals</h5>
                 <a href="#" className="btn btn-primary">Shop Now</a>
@@ -60,7 +60,7 @@ const Do: React.FC = () => {
           <div className="card">
             <div className="card-img-top-2-container">
               <img src="/image 181.png" className="card-img-top-2 hover-effect-zoom-out" alt="Gift Tags" />
-              <span class="discount-tag">40% off</span>
+              <span className="discount-tag">40% off</span>
               <div className="overlay">
                 <h5 className="card-title">Gift Tags</h5>
                 <a href="#" className="btn btn-primary">Shop Now</a>
