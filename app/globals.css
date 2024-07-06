@@ -104,7 +104,7 @@ html, body {
   }
 
   .content-e h1 {
-    font-size: 40px;
+    font-size: 33px;
     margin-bottom: 10px;
     margin-left: 50px;
     background-color: rgba(255,188,207,255);
@@ -112,7 +112,7 @@ html, body {
   }
 
   .content-e p {
-    width: 422px;
+    width: 400px;
     font-size: 18px;
     margin-left: 50px;
     text-align: center;
