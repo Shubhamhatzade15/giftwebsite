@@ -51,6 +51,7 @@ html, body {
   color: rgba(144, 0, 105, 1);
   gap: 0;
   
+  
 }
 
 .content-e p {
@@ -71,53 +72,60 @@ html, body {
   cursor: pointer;
 }
 
-/* Mobile View CSS */
-@media screen and (max-width: 768px) {
-  .content-e {
-     height: 100vh;
-     width: 100vw;
-     align-items: center;
-     margin-top: 15px;
-   }
- 
-  .content-e h1 {
-     font-size: 39px;
-     font-weight: 600;
-   }
- 
-  .content-e p {
-     font-size: 18px;
-     font-weight: 500;
-   }
- 
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+  .container-e {
+    height: 800px;
+    width: 900px;
+    overflow: hidden;
+    object-fit: fill;
+    margin-left: -50px;
+    
+  }
+
   .background-image-e {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    width: 900px;
     object-fit: cover;
-    transform: rotate(90deg);
-   }
- 
+  }
+
   .background-image-e img {
-    width: 100vw;
-    height: 100vh;
+    width: 900px;
+    height: 100%;
     object-fit: cover;
     transform: rotate(90deg);
-   }
- 
-  .content-e {
-     position: absolute;
-     top: 20%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     text-align: center;
-     z-index: 1;
-   }
- 
   
- }
+  }
+
+  .content-e {
+    flex-direction: column;
+    height: auto;
+    
+  }
+
+  .content-e h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    background-color: rgba(255,188,207,255);
+    text-align: center;
+  }
+
+  .content-e p {
+    width: 422px;
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: center;
+    background-color: rgba(255,188,207,255);
+   
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-left: 200px;
+  }
+}
 
 
 /*navbar*/
@@ -192,6 +200,8 @@ html, body {
 @media only screen and (max-width: 768px) {
   .navbar {
     padding: 1rem 0;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .logo {
@@ -256,12 +266,15 @@ html, body {
 
 /* Add media query for mobile view */
 @media only screen and (max-width: 768px) {
-  .headfooter-container {
+  .headfooter-container { 
+    margin-bottom: 0;
+    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     height: auto;
   }
   .headfooternav {
+    margin-bottom: 0;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
@@ -310,10 +323,7 @@ html, body {
   border-top-right-radius: 10px;
 }
 
-.hover-effect-zoom-out:hover {
-  transform: scale(0.9);
-  transition: transform 0.3s ease-in-out;
-}
+
 
 .card-img-top-2 {
   width: 100%;
@@ -321,8 +331,17 @@ html, body {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: inline-block;
+
 }
 
+.hover-effect-zoom-out {
+  transition: transform 0.3s; /* Add a transition effect */
+}
+
+.hover-effect-zoom-out:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
 .card-body {
   padding: 20px;
   height: 62px;
@@ -363,6 +382,7 @@ html, body {
 
 .card-img-top-2-container {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -379,6 +399,20 @@ html, body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
+  pointer-events: none;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(184, 10, 137, 1);
+  color: #FFFFFF; /* White text */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the tag is on top of the image */
 }
 
 /* Mobile view styles */
@@ -656,6 +690,29 @@ h1 {
   grid-area: anniversary;
 }
 
+@media only screen and (max-width: 768px) {
+ .image-grid-i {
+    grid-template-areas:
+      "birthday corporate"
+      "flowers flowers"
+      "weddings anniversary"
+      ;
+    grid-gap: 10px;
+    margin-left: 0; /* remove margin-left for mobile view */
+  }
+  
+ .image-grid-i img {
+    width: 100%;
+    height: 180px; /* adjust height for mobile view */
+    object-fit: cover;
+  }
+
+  .image-grid-i img:nth-child(2) {
+    grid-area: flowers;
+    height: 600px;
+  }
+}
+
 
 /*Newsletter*/
 .container {
@@ -822,17 +879,23 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   top: 103px;
 }
 
+.transparent-image-g{
+  width: 230px;
+  height: 130.76px;
+  margin-left: 500px;
+  margin-bottom: -50px;
+}
 /* Mobile view */
 @media only screen and (max-width: 768px) {
   .container-ggg {
     flex-direction: column;
     padding: 10px;
     align-items: center;
+    margin-top: -120px;
   }
 
   .newsletter-sectiong {
     flex-direction: column;
-    margin-top: 20px;
     align-items: center;
   }
 
@@ -844,7 +907,6 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
 
   .left-side h2{
     font-size: 36px;
-    line-height: 48px;
     
   }
 
@@ -870,21 +932,26 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
     width: 100%;
     height: 40px;
     padding: 10px;
-    margin-top: 10px;
+    
   }
 
   .vertical-separator {
     display: none;
   }
 
-  .transparent-image{
-    align-self: self-end;
-    bottom: 20px; /* added to position the image at the bottom */
-    right: 20px; /* added to position the image at the right */
-    width: 50px;
-    height: 80px;
+  .transparent-image {
+    position: relative;
+    top: 250px;
+    right: -150px;
+    width: 129px;
+    height: 134px;
+  }
+
+  .transparent-image-g{
+   display: none;
   }
 }
+
 
 /*horizontal gallery*/
 .horizontal-gallery {
@@ -944,35 +1011,16 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   font-family: Poppins;
   font-weight: 400;
   font-size: 21px;
-  line-height: 24px;
   color: rgba(213, 213, 213, 1);
   margin-left: 100px;
+  margin-bottom: 0;
 }
 
 .footer .social-media {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 100px;
-  margin-top: 10px;
+  display: none;
 }
 
-.footer .social-media li {
-  margin-right: 10px;
-}
 
-.footer .social-media li a {
-  color: #fff;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.footer .social-media li a:hover {
-  color: #f05089;
-}
 
 .footer .payment-methods {
   list-style: none;
@@ -982,11 +1030,12 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   justify-content: flex-start;
   align-items: center;
   margin-left: 100px;
+  margin-top: 0;
 }
 
 .footer .payment-methods li {
   margin-right: 10px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .footer .payment-methods li img {
@@ -994,7 +1043,17 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   height: 29px;
 }
 
-.footer .footer-heading {
+.footer .footer-heading-c {
+  color: rgba(255, 255, 255, 1);
+  font-family: Alegreya;
+  font-style: italic;
+  font-size: 23px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  text-decoration: underline;
+}
+
+.footer .footer-heading-i {
   color: rgba(255, 255, 255, 1);
   font-family: Alegreya;
   font-style: italic;
@@ -1044,23 +1103,39 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
 
 /* Mobile view styles */
 @media (max-width: 768px) {
+  .footer{
+    flex-direction: column;
+    overflow: hidden;
+    
+    
+  }
+
+  
   .footer .row {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(19, 19, 19, 1);
     flex-direction: column;
+    
+    
   }
 
   .footer .col-md-4 {
     width: 100%;
     margin-bottom: 20px;
+    flex: 1;
+    
   }
 
   .footer .logo {
     margin-left: 20px;
+    margin-top: -20px;
   }
 
   .footer .logo img {
     width: 80px;
     height: 53.33px;
+    
   }
 
   .footer p {
@@ -1068,28 +1143,39 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
     margin-left: 20px;
   }
 
-  .footer .social-media {
-    margin-left: 20px;
-  }
 
   .footer .payment-methods {
     margin-left: 20px;
+    margin-bottom: -10px;
   }
 
-  .footer .footer-heading {
+  .footer .footer-heading-c {
     margin-left: 20px;
+   margin-bottom: 0;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+  .footer .footer-heading-i {
+    margin-left: 20px;
+    margin-top: 0;
+    align-items: center;
+    margin-top: -30px;
   }
 
   .footer .footer-links {
     margin-left: 20px;
+    
   }
 
   .footer .copyright p {
     margin-left: 20px;
+    font-size: 10px;
   }
 
   .footer .copyright {
     background-color: rgba(19, 19, 19, 1);
+   
     
   }
 }

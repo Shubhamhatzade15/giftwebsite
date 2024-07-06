@@ -7,7 +7,8 @@ const HeroPage = () => {
         <img src="/image 141.png" alt="Gift box" />
       </div>
       <div className="content-e">
-        <h1>Gifts Wrapped with Care,</h1><h1>Delivered with Love!</h1>
+        <h1>Gifts Wrapped with Care,</h1>
+        <h1>Delivered with Love!</h1>
         <p>We take pride in offering exquisite gift wrapping solutions</p>
         <p>that reflect the care and thoughtfulness you put into selecting them.</p>
         <br></br>

@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-4">
-            <h3 className="footer-heading">For Customer</h3>
+            <h3 className="footer-heading-c">For Customer</h3>
             <ul className="footer-links">
               <li>
                 <a href="#">About Us</a>
@@ -74,7 +74,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-4">
-            <h3 className="footer-heading">Information</h3>
+            <h3 className="footer-heading-i">Information</h3>
             <ul className="footer-links">
               <li>
                 <a href="#">Shipping & Delivery</a>

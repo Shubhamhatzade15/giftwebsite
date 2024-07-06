@@ -27,6 +27,7 @@ const Gallery = () => {
           <div className="left-side">
             <h2>Newsletter Updates</h2>
             <p>Get Unique and trendy gift ideas and best offers delivered to your inbox.</p>
+            <img src="/Group 79.png" alt="Transparent Image" className="transparent-image-g" />
           </div>
           <div className="vertical-separator" /> {/* added vertical line */}
           <div className="right-side">
